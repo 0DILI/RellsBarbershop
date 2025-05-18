@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="absolute top-4 left-0 right-0 px-6 flex items-center md:gap-[200px] gap-0 max-[768px]:justify-between text-black z-10"
+    >
+      <!-- Left: Nav Links -->
+
+      <ul class="hidden md:flex text-[18px] font-bold gap-6 items-center">
+        <li class="hover:text-[#fbddfe] cursor-pointer">
+          <a href="/about.html">About</a>
+        </li>
+        <li class="hover:text-[#fbddfe] cursor-pointer">
+          <a href="./services.html">Services</a>
+        </li>
+        <li class="hover:text-[#fbddfe] cursor-pointer">
+          <a href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="hover:text-[#fbddfe] cursor-pointer">Music</li>
+      </ul>
+
+      <!-- Right: Logo -->
+      <p class="text-[20px] font-bold text-black">
+        <a href="./index.html">Rell Cut Experience</a>
+      </p>
+
+      <!-- Hamburger for mobile -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 h-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="absolute top-20 right-4 bg-black bg-opacity-80 text-white p-4 rounded-md space-y-2 text-[18px] font-bold hidden md:hidden z-20"
+    >
+      <a href="#" class="block hover:text-[#fbddfe]">About</a>
+      <a href="#" class="block hover:text-[#fbddfe]">Services</a>
+      <a href="#" class="block hover:text-[#fbddfe]">Portfolio</a>
+      <a href="#" class="block hover:text-[#fbddfe]">Music</a>
+    </div>
+
+    <div class="flex flex-col items-center space-y-3 mt-20 sm:px-6 px-3">
+      <h3 class="text-center text-[32px] font-bold">About</h3>
+      <img
+        src="./assets/rell.png"
+        alt="Terrell Chavous"
+        class="w-42 h-42 rounded-full object-cover shadow-md"
+      />
+
+      <h2 class="text-[24px] font-bold">Terrell Chavous</h2>
+
+      <!-- SOCIAL LINKS -->
+      <div class="flex items-center gap-4 justify-center">
+        <a href="#">
+          <img src="./assets/email.svg" />
+        </a>
+
+        <a href="#">
+          <img src="./assets/tiktok.svg" />
+        </a>
+
+        <a href="#">
+          <img src="./assets/insta.svg" />
+        </a>
+
+        <a href="#">
+          <img src="./assets/youtube.svg" />
+        </a>
+      </div>
+
+      <p class="text-[24x] text-center leading-[28px]">
+        Thank you for considering my services! I am a 23 year old Master Barber.
+        Check out <br />
+        my photos, my work speaks for itself.
+      </p>
+
+      <p class="font-bold mt-2 text-[20px]">**PLEASE READ BEFORE BOOKING**</p>
+
+      <p class="text-center text-gray-700 leading-[28px]">
+        If you are more than 10 minutes late your appointment will be cancelled.
+        I will not be<br />
+        able to accept you after 10 minutes because you will be running over
+        into someone<br />
+        else scheduled appointment time. My time is valuable as well as yours.
+      </p>
+
+      <p class="text-[20px] text-center">
+        THANK YOU for taking the time out to book with me see you soon!
+      </p>
+
+      <div class="mt-6 text-sm text-gray-600 text-[20px]">
+        <p class="text-center">10959 Atomic Rd</p>
+        <p class="text-center">North Augusta, SC 29841</p>
+        <p class="text-center">
+          (Entrance is on the right side of the building)
+        </p>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
